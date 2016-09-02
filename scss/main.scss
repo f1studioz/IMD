@@ -29,9 +29,9 @@ header {
         background: #fff;
         border: none;
         box-shadow: $shadow;
-        .navbar-toggle{
+        .navbar-toggle {
             border: none;
-            &:hover{
+            &:hover {
                 background: none;
             }
         }
@@ -137,7 +137,6 @@ header {
             background: rgba(255, 255, 255, 0.06);
             .navbar-nav {
                 &.navbar-center {
-             
                     li {
                         a {
                             color: rgba(255, 255, 255, 0.8);
@@ -480,18 +479,18 @@ footer {
 /*****************************Media Queries************************/
 
 @media(max-width:768px) {
-    header{
-        .navbar-default{
-            .navbar-brand{
-                img{
-                    width:183px;
+    header {
+        .navbar-default {
+            .navbar-brand {
+                img {
+                    width: 183px;
                 }
             }
-            .navbar-nav{
-                &.navbar-center{
+            .navbar-nav {
+                &.navbar-center {
                     margin-left: 58px;
                 }
-                &.navbar-right{
+                &.navbar-right {
                     display: none;
                 }
             }
@@ -513,37 +512,41 @@ footer {
 }
 
 @media(max-width:480px) {
+   
     .clear {
         clear: both;
     }
     header {
-        .navbar-nav{
-        &.navbar-center {
-            margin-left: 0px !important;
-            li {
-                a {text-align: center;
-                    &:hover {
-                        color: $base-color;
-                        &:after {
-                            width: 0% !important;
+        .navbar-nav {
+            &.navbar-center {
+                margin-left: 0px !important;
+                li {
+                    a {
+                        text-align: center;
+                        &:hover {
+                            color: $base-color;
+                            &:after {
+                                width: 0% !important;
+                            }
                         }
                     }
-                }
-                &.active{
-                    a{ color: $base-color;
-                        &:after{
-                            width: 0% !important;
+                    &.active {
+                        a {
+                            color: $base-color;
+                            &:after {
+                                width: 0% !important;
+                            }
                         }
                     }
                 }
             }
-        }
-        &.navbar-right {
-            display: none;
-        }
+            &.navbar-right {
+                display: none;
+            }
         }
     }
     section {
+        padding: 0px 10px;
         &.stats {
             text-align: center;
             .stat-container {
@@ -552,20 +555,24 @@ footer {
                     border: none;
                     padding-right: 15px;
                     .stat-text {
-                        float: none;}
-                        img {
-                            float: none;
-                            margin-top: 10px;
-                            display: inline-block;
-                        }
-                    
+                        float: none;
+                    }
+                    img {
+                        float: none;
+                        margin-top: 10px;
+                        display: inline-block;
+                    }
                 }
             }
         }
-        &.section-two-container{
-            .insight-type-cont{
-                .insight-type-box{
+        &.section-two-container {
+            .insight-type-cont {
+                 &:nth-child(2) {
+                    padding-right: 15px;
+                }
+                .insight-type-box {
                     height: auto;
+                    padding-bottom: 10px;
                 }
             }
         }
