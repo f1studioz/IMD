@@ -11,7 +11,8 @@ body {
     font-size: 12px;
     line-height: 21px; }
   body.dark {
-    background: #333 url("../images/background/dark-background.jpg") no-repeat; }
+    background: #333 url("../images/background/dark-background.jpg") no-repeat;
+    background-size: cover; }
 
 header .navbar-default {
   background: #fff;
