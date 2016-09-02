@@ -21,6 +21,7 @@ body {
     }
     &.dark {
         background: #333 url('../images/background/dark-background.jpg') no-repeat;
+        background-size: cover;
     }
 }
 
