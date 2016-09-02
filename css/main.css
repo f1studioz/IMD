@@ -325,17 +325,22 @@ footer {
         width: 0% !important; }
   header .navbar-nav.navbar-right {
     display: none; }
-  section.stats {
-    text-align: center; }
-    section.stats .stat-container .stat-box {
-      margin-bottom: 30px;
-      border: none;
+  section {
+    padding: 0px 10px; }
+    section.stats {
+      text-align: center; }
+      section.stats .stat-container .stat-box {
+        margin-bottom: 30px;
+        border: none;
+        padding-right: 15px; }
+        section.stats .stat-container .stat-box .stat-text {
+          float: none; }
+        section.stats .stat-container .stat-box img {
+          float: none;
+          margin-top: 10px;
+          display: inline-block; }
+    section.section-two-container .insight-type-cont:nth-child(2) {
       padding-right: 15px; }
-      section.stats .stat-container .stat-box .stat-text {
-        float: none; }
-      section.stats .stat-container .stat-box img {
-        float: none;
-        margin-top: 10px;
-        display: inline-block; }
-  section.section-two-container .insight-type-cont .insight-type-box, section.section-two-container .insight-type-cont .compliance-box, section.section-two-container .insight-type-cont .security-box {
-    height: auto; } }
+    section.section-two-container .insight-type-cont .insight-type-box, section.section-two-container .insight-type-cont .compliance-box, section.section-two-container .insight-type-cont .security-box {
+      height: auto;
+      padding-bottom: 10px; } }
