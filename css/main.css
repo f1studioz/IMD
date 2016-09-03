@@ -579,7 +579,7 @@ footer {
   section.summary-section-bottom .news-trends .news-trends-box .mesh {
     margin-left: 190px; } }
 
-@media (max-width: 480px) {
+@media (max-width:600px) {
   .clear {
     clear: both; }
   header .navbar-nav.navbar-center {
