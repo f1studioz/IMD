@@ -555,6 +555,20 @@ footer {
     color: rgba(255, 255, 255, 0.4); }
 
 /*****************************Media Queries************************/
+@media (max-width: 1199px) {
+  header .navbar-default .navbar-nav.navbar-center {
+    margin-left: 5px; }
+  section.summary-section-top .graph-container {
+    padding-right: 0px; }
+  section.summary-section-bottom .left-section {
+    padding-right: 5px; } }
+
+@media (max-width: 991px) {
+  header .navbar-default .navbar-nav.navbar-center {
+    margin-left: 20px; }
+  header .navbar-default .navbar-nav.navbar-right {
+    display: none; } }
+
 @media (max-width: 768px) {
   header .navbar-default .navbar-brand img {
     width: 183px; }
@@ -562,6 +576,17 @@ footer {
     margin-left: 58px; }
   header .navbar-default .navbar-nav.navbar-right {
     display: none; }
+  section.stats {
+    text-align: center; }
+    section.stats .stat-container .stat-box {
+      margin-bottom: 0px;
+      padding-right: 15px; }
+      section.stats .stat-container .stat-box .stat-text {
+        float: none; }
+      section.stats .stat-container .stat-box img {
+        float: none;
+        margin-top: 10px;
+        display: inline-block; }
   section.section-two-container .insight-type-cont {
     padding-right: 15px; }
     section.section-two-container .insight-type-cont:nth-child(2) {
@@ -579,7 +604,18 @@ footer {
   section.summary-section-bottom .news-trends .news-trends-box .mesh {
     margin-left: 190px; } }
 
-@media (max-width:600px) {
+@media (max-width: 600px) {
+  section.stats .stat-container .stat-box {
+    margin-bottom: 30px;
+    border: none; }
+  section.summary-section-bottom .left-section .table-section .col-md-12 .btn-group.bootstrap-select {
+    margin-left: 15px; }
+  section.summary-section-bottom .news-trends .news-trends-box .mesh {
+    margin-left: 80px; } }
+
+@media (max-width: 480px) {
+  body {
+    overflow-x: hidden; }
   .clear {
     clear: both; }
   header .navbar-nav.navbar-center {
@@ -598,18 +634,8 @@ footer {
     display: none; }
   section {
     padding: 0px 10px; }
-    section.stats {
-      text-align: center; }
-      section.stats .stat-container .stat-box {
-        margin-bottom: 30px;
-        border: none;
-        padding-right: 15px; }
-        section.stats .stat-container .stat-box .stat-text {
-          float: none; }
-        section.stats .stat-container .stat-box img {
-          float: none;
-          margin-top: 10px;
-          display: inline-block; }
+    section.stats .stat-container .stat-box {
+      margin-bottom: 30px; }
     section.section-two-container .insight-type-cont:nth-child(2) {
       padding-right: 15px; }
     section.section-two-container .insight-type-cont .insight-type-box, section.section-two-container .insight-type-cont .compliance-box, section.section-two-container .insight-type-cont .security-box {
