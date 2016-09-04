@@ -417,9 +417,9 @@ section {
     }
     &.summary-section-top {
         .graph-container {
-            padding-left: 0px;
+            
             .outer-box-cont {
-                padding-left: 25px;
+                padding-left: 22px;
                 .pie-chart-box {
                     height: 300px;
                     padding: 0px 10px;
@@ -513,7 +513,6 @@ section {
                         }
                     }
                 }
-               
                 &:first-child {
                     padding-left: 15px;
                 }
@@ -522,210 +521,205 @@ section {
                 }
             }
         }
-        .map-container{
-            .outer-box-cont{
-                .map-box{
-                     padding: 0px 0px;
+        .map-container {
+            .outer-box-cont {
+                padding-left: 10px;
+                .map-box {
                     background: #fff;
                     border-radius: $border-radius;
                     box-shadow: $shadow;
                     margin-top: 10px;
-                    h3{
-                        margin:20px 15px;
+                    h3 {
+                        margin: 20px 15px;
                     }
-                    img{
+                    img {
                         margin-top: 40px;
                     }
-                    .table{
-                        margin-top:55px;
+                    .table {
+                        margin-top: 72px;
+                        
                     }
                 }
             }
         }
     }
-    &.summary-section-bottom{
-        .left-section{
-            padding-right: 20px;
-            .lorem-cont{
+    &.summary-section-bottom {
+        .left-section {
+            
+            .lorem-cont {
                 margin-top: 10px;
-                padding-right: 25px;
-                .lorem-box{
+               padding-right: 25px;
+                &:last-child{
+                    padding-right: 15px;
+                }
+                .lorem-box {
                     background: #fff;
                     border-radius: $border-radius;
                     box-shadow: $shadow;
                 }
-            }    
-            .table-section{
-                margin-right: -5px;
+            }
+            .table-section {
+                
                 margin-top: 10px;
                 background: #fff;
                 border-radius: $border-radius;
                 box-shadow: $shadow;
-                .col-md-12{
-                    padding:0px;
-                    h3{
+                .col-md-12 {
+                    padding: 0px;
+                    h3 {
                         margin-left: 20px;
-                      
                     }
-                     
-                    .btn-group{
-                        &.bootstrap-select{
-                           
-                           margin-left: 100px;
+                    .btn-group {
+                        &.bootstrap-select {
+                            margin-left: 100px;
                             margin-top: 5px;
-                        }.btn{
-                        &.btn-info{
-                         background: none;
-                         color: rgba(0,0,0,0.6);
-                         border:none;
-                         border-bottom: 1px solid rgba(0,0,0,0.2);   
-                         border-radius: 0px;   
+                        }
+                        .btn {
+                            &.btn-info {
+                                background: none;
+                                color: rgba(0, 0, 0, 0.6);
+                                border: none;
+                                border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+                                border-radius: 0px;
                             }
-                            &.active{
-                              box-shadow: none;  
+                            &.active {
+                                box-shadow: none;
                             }
-                            &:active{
+                            &:active {
                                 @extend .active
                             }
                         }
-                        span{
-                            &.bs-caret{
-                                color:rgba(0,0,0,0.6);   
+                        span {
+                            &.bs-caret {
+                                color: rgba(0, 0, 0, 0.6);
                                 margin-left: 50px;
-                                
                             }
                         }
-                        &.open{
-                            .dropdown-toggle{
+                        &.open {
+                            .dropdown-toggle {
                                 box-shadow: none !important;
                             }
                         }
-                        .dropdown-menu{
-                            a{
-                                &:focus{
+                        .dropdown-menu {
+                            a {
+                                &:focus {
                                     outline: none;
                                 }
                             }
                         }
                     }
-                    .table{
-                       
-                        .img-responsive{
-                           margin: 0 auto;
-                            
+                    .table {
+                        .img-responsive {
+                            margin: 0 auto;
                         }
                     }
                 }
             }
         }
-        .news-trends{
-            .news-trends-box{
+        .news-trends {
+            padding-left: 25px;
+            .news-trends-box {
                 background: #fff;
                 border-radius: $border-radius;
                 box-shadow: $shadow;
                 margin-top: 10px;
-                height:484px;
-                
-                .mesh{
+                height: 484px;
+               
+                .mesh {
                     position: relative;
-                    p{
+                    p {
                         position: absolute;
-                         text-transform: uppercase;
-                        
-                        &.grey{
-                          
-                           
+                        text-transform: uppercase;
+                        &.grey {
                             color: #999;
                             font-size: 13px;
-                            &.one{
-                                top:30px;
-                              left: 180px;
+                            &.one {
+                                top: 30px;
+                                left: 180px;
                             }
-                             &.two{
-                                top:90px;
-                              left: 10px;
+                            &.two {
+                                top: 90px;
+                                left: 10px;
                             }
-                             &.three{
-                                top:120px;
-                              left: 230px;
+                            &.three {
+                                top: 120px;
+                                left: 230px;
                             }
-                             &.four{
-                                top:180px;
-                              left: 0px;
+                            &.four {
+                                top: 180px;
+                                left: 0px;
                             }
-                             &.five{
-                                top:260px;
-                              left: 160px;
+                            &.five {
+                                top: 260px;
+                                left: 160px;
                             }
-                             &.six{
-                                top:350px;
-                              left: 90px;
+                            &.six {
+                                top: 350px;
+                                left: 90px;
                             }
-                           
                         }
-                        &.green{
-                            
+                        &.green {
                             color: #7ed321;
                             font-size: 24px;
                             font-weight: 900;
-                            top:150px;
+                            top: 150px;
                             left: 50px;
                         }
-                        &.black{
+                        &.black {
                             font-size: 16px;
                             color: #333;
-                            &.bold{
+                            &.bold {
                                 color: #666;
                                 font-weight: 600;
-                                top:150px;
-                                left:210px;
+                                top: 150px;
+                                left: 210px;
                             }
-                            &.one{
-                              left:220px;
-                                top:60px;
+                            &.one {
+                                left: 220px;
+                                top: 60px;
                             }
-                            &.two{
+                            &.two {
                                 left: 70px;
-                                top:120px;
+                                top: 120px;
                             }
-                            &.three{
+                            &.three {
                                 left: 0px;
-                                top:260px;
+                                top: 260px;
                             }
-                            &.four{
+                            &.four {
                                 left: 30px;
-                                top:290px;
+                                top: 290px;
                             }
-                             &.five{
+                            &.five {
                                 left: 190px;
-                                top:290px;
+                                top: 290px;
                             }
                         }
-                        &.yellow{
+                        &.yellow {
                             font-size: 18px;
                             color: #f5a623;
                             font-weight: 500;
-                            &.bold{
-                                 font-size: 20px;
+                            &.bold {
+                                font-size: 20px;
                                 font-weight: 900;
-                                top:200px;
-                                left:120px;
+                                top: 200px;
+                                left: 120px;
                             }
-                            &.one{
+                            &.one {
                                 left: 30px;
                                 top: 60px;
                             }
-                            &.two{
-                                top:320px;
+                            &.two {
+                                top: 320px;
                                 left: 60px;
                             }
                         }
-                        &.red{
+                        &.red {
                             color: #d0021b;
                             font-size: 18px;
                             font-weight: 500;
-                            top:230px;
-                            left:50px;
+                            top: 230px;
+                            left: 50px;
                         }
                     }
                 }
@@ -802,40 +796,40 @@ section {
                 }
             }
         }
-         .table {
-                    thead {
-                        tr {
-                            background: rgba(102, 102, 102, 0.6);
-                        }
-                    }
-                    tbody {
-                        tr {
-                            td {
-                                border-color: rgba(255, 255, 255, 0.25);
-                            }
-                        }
+        .table {
+            thead {
+                tr {
+                    background: rgba(102, 102, 102, 0.6);
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        border-color: rgba(255, 255, 255, 0.25);
                     }
                 }
-        &.summary-section-top{
-            h3{
-                 color: rgba(255,255,255,0.6);
             }
-            .graph-container{
-                .outer-box-cont{
-                    .pie-chart-box{
-                       background: rgba(255, 255, 255, 0.05);
+        }
+        &.summary-section-top {
+            h3 {
                 color: rgba(255, 255, 255, 0.6);
-                        p{
-                            color: rgba(255,255,255,0.6);
+            }
+            .graph-container {
+                .outer-box-cont {
+                    .pie-chart-box {
+                        background: rgba(255, 255, 255, 0.05);
+                        color: rgba(255, 255, 255, 0.6);
+                        p {
+                            color: rgba(255, 255, 255, 0.6);
                         }
                     }
-                    .share-box{
-                        .col-xs-12{
-                            ul{
-                                li{
-                                    color: rgba(255,255,255,0.6);
-                                    strong{
-                                      color: rgba(255,255,255,0.9);  
+                    .share-box {
+                        .col-xs-12 {
+                            ul {
+                                li {
+                                    color: rgba(255, 255, 255, 0.6);
+                                    strong {
+                                        color: rgba(255, 255, 255, 0.9);
                                     }
                                 }
                             }
@@ -843,60 +837,59 @@ section {
                     }
                 }
             }
-            .map-container{
-                .outer-box-cont{
-                    .map-box{
-                         background: rgba(255, 255, 255, 0.05);
-                color: rgba(255, 255, 255, 0.6);
-                    }
-                }
-            }
-        }
-        &.summary-section-bottom{
-            h3{
-                color: rgba(255,255,255,0.6);
-            }
-            .left-section{
-                .lorem-cont{
-                    .lorem-box{
+            .map-container {
+                .outer-box-cont {
+                    .map-box {
                         background: rgba(255, 255, 255, 0.05);
                         color: rgba(255, 255, 255, 0.6);
                     }
                 }
-            
-            .table-section{
-                 background: rgba(255, 255, 255, 0.05);
+            }
+        }
+        &.summary-section-bottom {
+            h3 {
+                color: rgba(255, 255, 255, 0.6);
+            }
+            .left-section {
+                .lorem-cont {
+                    .lorem-box {
+                        background: rgba(255, 255, 255, 0.05);
                         color: rgba(255, 255, 255, 0.6);
-                .col-md-12{
-                    .btn-group{
-                        .btn{
-                            &.btn-info{
+                    }
+                }
+                .table-section {
+                    background: rgba(255, 255, 255, 0.05);
+                    color: rgba(255, 255, 255, 0.6);
+                    .col-md-12 {
+                        .btn-group {
+                            .btn {
+                                &.btn-info {
+                                    color: rgba(255, 255, 255, 0.6);
+                                    border-bottom-color: rgba(255, 255, 255, 0.6);
+                                }
+                            }
+                            .dropdown-toggle {
+                                .caret {
+                                    color: rgba(255, 255, 255, 0.6);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .news-trends {
+                .news-trends-box {
+                    background: rgba(255, 255, 255, 0.05);
+                    color: rgba(255, 255, 255, 0.6);
+                    .mesh {
+                        p {
+                            &.black {
                                 color: rgba(255, 255, 255, 0.6);
-                                border-bottom-color: rgba(255, 255, 255, 0.6);
-                            }
-                        }
-                        .dropdown-toggle{
-                            .caret{
-                                color: rgba(255, 255, 255, 0.6); 
                             }
                         }
                     }
                 }
             }
-            }
-            .news-trends{
-                .news-trends-box{
-                     background: rgba(255, 255, 255, 0.05);
-                        color: rgba(255, 255, 255, 0.6);
-                    .mesh{
-                        p{
-                            &.black{
-                                color: rgba(255,255,255,0.6);
-                            }
-                        }
-                    }
-                }
-            }    
         }
     }
 }
@@ -917,31 +910,48 @@ footer {
 
 
 /*****************************Media Queries************************/
-@media(max-width:1199px){
+
+@media(max-width:1199px) {
     header {
         .navbar-default {
             .navbar-nav {
                 &.navbar-center {
                     margin-left: 5px;
                 }
-                
             }
         }
     }
-    section{
-        &.summary-section-top{
-            .graph-container{
-                padding-right: 0px;
+    section {
+        &.section-two-container {
+            margin-top: 10px;
+            .insight-type-cont {
+                padding-right: 30px;
+                .insight-type-box {
+                    height: auto;
+                    min-height: 349px;
+                }
             }
         }
+        &.summary-section-top{
+            .map-container{
+                .outer-box-cont{
+                    .map-box{
+                        height: 622px;
+                    }
+                }
+            }
+        }    
         &.summary-section-bottom{
-            .left-section{
-                padding-right: 5px;
+            .news-trends{
+                .news-trends-box{
+                    height: 577px;
+                }
             }
         }
     }
 }
-@media(max-width:991px){
+
+@media(max-width:991px) {
     header {
         .navbar-default {
             .navbar-nav {
@@ -951,11 +961,46 @@ footer {
                 &.navbar-right {
                     display: none;
                 }
-                
+            }
+        }
+    }
+    section {
+        &.section-two-container {
+            margin-top: 10px;
+            .insight-type-cont {
+                padding-right: 15px;
+                &:nth-child(2) {
+                    padding-right: 20px;
+                }
+                .insight-type-box {
+                    margin-bottom: 10px;
+                    min-height: none;
+                }
+            }
+        }
+        &.summary-section-top{
+            .graph-container{
+                .outer-box-cont{
+                    padding-left: 15px;
+                }
+            }
+            .map-container{
+                .outer-box-cont{
+                    padding-left: 0px;
+                    .map-box{
+                        height: auto;
+                    }
+                }
+            }
+        }
+        &.summary-section-bottom{
+            .news-trends{
+                padding-left: 15px;
             }
         }
     }
 }
+
 @media(max-width:768px) {
     header {
         .navbar-default {
@@ -980,10 +1025,9 @@ footer {
             .stat-container {
                 .stat-box {
                     margin-bottom: 0px;
-                 
                     padding-right: 15px;
                     .stat-text {
-                        float:none
+                        float: none
                     }
                     img {
                         float: none;
@@ -995,89 +1039,75 @@ footer {
         }
         &.section-two-container {
             .insight-type-cont {
-                padding-right: 15px;
-                &:nth-child(2) {
-                    padding-right: 20px;
-                }
                 .compliance-box {
                     margin-top: 10px;
                 }
             }
         }
-        &.summary-section-top {
-        .graph-container {
-            padding-right: 0px;
-            .outer-box-cont{
-                padding-left: 15px;
-            }
-            }
-        }
-        &.summary-section-bottom{
-            .left-section{
-             
-                    padding-right:5px;
-                .table-section{
-                    .col-md-12{
-                        .btn-group{
-                            &.bootstrap-select{
+        
+        &.summary-section-bottom {
+            .left-section {
+                .table-section {
+                    .col-md-12 {
+                        .btn-group {
+                            &.bootstrap-select {
                                 margin-left: 85px;
                             }
                         }
                     }
                 }
             }
-            .news-trends{
-                 .news-trends-box{
-                    
-                     .mesh{
-                         margin-left: 190px;
-                      
-                     }
-                 }
-             }
-             
-        }
-    }
-}
-@media(max-width:600px){
-     section {
-        &.stats {
-            .stat-container {
-                .stat-box {
-                    margin-bottom:30px;
-                    border: none;
-                  
+            .news-trends {
+                .news-trends-box {
+                    .mesh {
+                        margin-left: 190px;
+                    }
                 }
             }
         }
-          &.summary-section-bottom{
-            .left-section{
-                .table-section{
-                    .col-md-12{
-                        .btn-group{
-                            &.bootstrap-select{
+    }
+}
+
+@media(max-width:600px) {
+    section {
+        padding:0px 10px;
+        &.stats {
+            .stat-container {
+                .stat-box {
+                    margin-bottom: 30px;
+                    border: none;
+                }
+            }
+        }
+        &.summary-section-bottom {
+            .left-section {
+                .lorem-cont{
+                    padding-right: 15px;
+                }
+                .table-section {
+                    .col-md-12 {
+                        .btn-group {
+                            &.bootstrap-select {
                                 margin-left: 15px;
                             }
                         }
                     }
                 }
             }
-            .news-trends{
-                 .news-trends-box{
-                    
-                     .mesh{
-                         margin-left: 80px;
-                      
-                     }
-                 }
-             }
-             
+            .news-trends {
+                .news-trends-box {
+                    .mesh {
+                        margin-left: 80px;
+                    }
+                }
+            }
         }
     }
 }
+
 @media(max-width:480px) {
-    body{
-        overflow-x:hidden;
+    body {
+        overflow-x: hidden;
     }
     .clear {
         clear: both;
@@ -1131,53 +1161,49 @@ footer {
                 }
             }
         }
-        &.summary-section-top{
-            .graph-container{
-                .outer-box-cont{
-                    .pie-chart-box{
-                        p{
-                            .number{
-                                 &.ml-set {
-                                margin-left: 2px;
-                            }
-                            &.ml-1-set {
-                                margin-left: 2px;
-                            }
+        &.summary-section-top {
+            .graph-container {
+                .outer-box-cont {
+                    .pie-chart-box {
+                        p {
+                            .number {
+                                &.ml-set {
+                                    margin-left: 2px;
+                                }
+                                &.ml-1-set {
+                                    margin-left: 2px;
+                                }
                             }
                         }
                     }
                 }
             }
         }
-         &.summary-section-bottom{
-            .left-section{
-             
-                   
-                .table-section{
-                    .col-md-12{
-                        .btn-group{
-                            &.bootstrap-select{
-                                margin-left:-50px;
+        &.summary-section-bottom {
+            .left-section {
+                .table-section {
+                    .col-md-12 {
+                        .btn-group {
+                            &.bootstrap-select {
+                                margin-left: -50px;
                             }
                         }
                     }
                 }
             }
-             .news-trends{
-                 .news-trends-box{
-                     overflow: auto;
-                     .mesh{
-                         margin-left: 0px;
-                         p{
-                             position: static;
-                             text-align: center;
-                             margin-bottom: 20px;
-                         }
-                     }
-                 }
-             }
-            
+            .news-trends {
+                .news-trends-box {
+                    overflow: auto;
+                    .mesh {
+                        margin-left: 0px;
+                        p {
+                            position: static;
+                            text-align: center;
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
         }
-        
     }
 }
