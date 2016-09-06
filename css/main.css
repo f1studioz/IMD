@@ -4,7 +4,7 @@ body {
   body h2 {
     font-weight: bolder; }
   body h3 {
-    color: #ea6a2b;
+    color: #87dfab;
     font-size: 14px;
     text-transform: uppercase; }
   body p {
@@ -12,7 +12,17 @@ body {
     line-height: 21px; }
   body.dark {
     background: #333 url("../images/background/dark-background.jpg") no-repeat;
-    background-size: cover; }
+    background-size: cover;
+    /* &:before{
+            content: '';
+            position: absolute;
+            background: #000;
+            width:100%;
+           height: 100%;
+            top:0px;
+            opacity: 0.8;
+            left: 0px;
+        }*/ }
   body .table {
     margin-bottom: 0px; }
     body .table thead {
@@ -42,10 +52,11 @@ header .navbar-default {
   header .navbar-default .navbar-brand {
     padding: 0px; }
     header .navbar-default .navbar-brand img {
-      width: 220px;
-      margin-top: 5px; }
+      width: 120px;
+      margin-top: 5px;
+      margin-left: 10px; }
   header .navbar-default .navbar-nav.navbar-center {
-    margin-left: 150px; }
+    margin-left: 270px; }
     header .navbar-default .navbar-nav.navbar-center li a {
       text-transform: uppercase; }
       header .navbar-default .navbar-nav.navbar-center li a:after {
@@ -55,18 +66,18 @@ header .navbar-default {
         height: 3px;
         width: 0%;
         transition: width 1s;
-        background: #ea6a2b;
+        background: #87dfab;
         margin: 0 auto;
         left: 0px;
         bottom: 0px;
         right: 0px; }
       header .navbar-default .navbar-nav.navbar-center li a:hover:after {
         width: 100%; }
-    header .navbar-default .navbar-nav.navbar-center li.active a:after, header .navbar-default .navbar-nav.navbar-center section.summary-section-bottom .left-section .table-section .col-md-12 .btn-group li.btn:active a:after, section.summary-section-bottom .left-section .table-section .col-md-12 .btn-group header .navbar-default .navbar-nav.navbar-center li.btn:active a:after {
+    header .navbar-default .navbar-nav.navbar-center li.active a:after, header .navbar-default .navbar-nav.navbar-center section .btn-group li.btn:active a:after, section .btn-group header .navbar-default .navbar-nav.navbar-center li.btn:active a:after {
       width: 100%; }
-  header .navbar-default .navbar-nav .active a, header .navbar-default .navbar-nav section.summary-section-bottom .left-section .table-section .col-md-12 .btn-group .btn:active a, section.summary-section-bottom .left-section .table-section .col-md-12 .btn-group header .navbar-default .navbar-nav .btn:active a {
+  header .navbar-default .navbar-nav .active a, header .navbar-default .navbar-nav section .btn-group .btn:active a, section .btn-group header .navbar-default .navbar-nav .btn:active a {
     background: none; }
-    header .navbar-default .navbar-nav .active a:hover, header .navbar-default .navbar-nav section.summary-section-bottom .left-section .table-section .col-md-12 .btn-group .btn:active a:hover, section.summary-section-bottom .left-section .table-section .col-md-12 .btn-group header .navbar-default .navbar-nav .btn:active a:hover {
+    header .navbar-default .navbar-nav .active a:hover, header .navbar-default .navbar-nav section .btn-group .btn:active a:hover, section .btn-group header .navbar-default .navbar-nav .btn:active a:hover {
       background: none; }
   header .navbar-default .navbar-nav.navbar-right li a {
     padding-bottom: 0px;
@@ -112,12 +123,41 @@ header.dark .navbar-default {
     border-left: 1px solid rgba(255, 255, 255, 0.2); }
 
 section {
+  padding: 0px 10px;
   /******************************Stats Section******************************/
   /**********************************Section 2****************************/
   /***********************************************************************/ }
+  section .btn-yellow {
+    background: #fbb03b;
+    color: #333;
+    padding: 2px 25px; }
+    section .btn-yellow:hover {
+      border: 1px solid #fbb03b;
+      color: #fbb03b;
+      background: none; }
+  section .btn-group.bootstrap-select {
+    margin-left: 124px !important;
+    margin-top: 5px; }
+  section .btn-group .btn.btn-info {
+    background: none;
+    color: rgba(0, 0, 0, 0.6);
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 0px; }
+  section .btn-group .btn.active, section .btn-group .btn:active {
+    box-shadow: none; }
+  section .btn-group span.bs-caret {
+    color: rgba(0, 0, 0, 0.6);
+    margin-left: 50px; }
+  section .btn-group.open .dropdown-toggle {
+    box-shadow: none !important; }
+    section .btn-group.open .dropdown-toggle.btn-info:hover {
+      background: none !important; }
+  section .btn-group .dropdown-menu a:focus {
+    outline: none; }
   section.stats .stat-container {
     background: #fff;
-    border-radius: 8px;
+    border-radius: 3px;
     padding: 15px 15px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3); }
     section.stats .stat-container .stat-box {
@@ -127,7 +167,7 @@ section {
       section.stats .stat-container .stat-box .stat-text {
         float: left; }
         section.stats .stat-container .stat-box .stat-text h2 {
-          color: #ea6a2b;
+          color: #ea6a2a;
           margin-top: 0px; }
         section.stats .stat-container .stat-box .stat-text p {
           text-transform: uppercase;
@@ -148,7 +188,7 @@ section {
         height: 290px;
         padding: 0px 10px;
         background: #fff;
-        border-radius: 8px;
+        border-radius: 3px;
         box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3); }
         section.section-two-container .insight-type-cont .insight-type-box .col-md-6:last-child, section.section-two-container .insight-type-cont .compliance-box .col-md-6:last-child, section.section-two-container .insight-type-cont .security-box .col-md-6:last-child {
           margin-top: 45px; }
@@ -171,7 +211,7 @@ section {
           section.section-two-container .insight-type-cont .security-box .security-chart-content .secret, section.section-two-container section.dark .insight-type-cont .security-box .security-chart-content .sensitive, section.dark section.section-two-container .insight-type-cont .security-box .security-chart-content .sensitive, section.section-two-container section.dark .insight-type-cont .security-box .security-chart-content .public, section.dark section.section-two-container .insight-type-cont .security-box .security-chart-content .public {
             position: absolute;
             top: 0px;
-            right: 30px; }
+            right: 50px; }
             section.section-two-container .insight-type-cont .security-box .security-chart-content .secret div, section.section-two-container section.dark .insight-type-cont .security-box .security-chart-content .sensitive div, section.dark section.section-two-container .insight-type-cont .security-box .security-chart-content .sensitive div, section.section-two-container section.dark .insight-type-cont .security-box .security-chart-content .public div, section.dark section.section-two-container .insight-type-cont .security-box .security-chart-content .public div {
               width: 39px;
               height: 25px;
@@ -183,7 +223,7 @@ section {
           section.section-two-container .insight-type-cont .security-box .security-chart-content .sensitive {
             position: absolute;
             top: 20px;
-            left: 30px; }
+            left: 50px; }
             section.section-two-container .insight-type-cont .security-box .security-chart-content .sensitive .chart-text {
               margin-bottom: 2px;
               margin-left: -35px; }
@@ -197,8 +237,8 @@ section {
               margin-left: -19px; }
           section.section-two-container .insight-type-cont .security-box .security-chart-content .public {
             position: absolute;
-            bottom: 21px;
-            right: 30px; }
+            bottom: 30px;
+            right: 40px; }
             section.section-two-container .insight-type-cont .security-box .security-chart-content .public .chart-text {
               margin-bottom: 2px;
               margin-left: 0px; }
@@ -216,7 +256,7 @@ section {
   section.table-section .table-container {
     background: #fff;
     margin-top: 10px;
-    border-radius: 8px;
+    border-radius: 3px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
     padding: 10px 3px; }
     section.table-section .table-container h3 {
@@ -245,7 +285,7 @@ section {
       padding: 10px 15px;
       box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
       margin-bottom: 10px;
-      border-radius: 8px; }
+      border-radius: 3px; }
       section.reports .yellow-box h3 {
         color: #000;
         margin-top: 5px; }
@@ -255,7 +295,7 @@ section {
       section.reports .lorem-cont .lorem-box {
         padding: 15px 10px;
         background: #fff;
-        border-radius: 8px;
+        border-radius: 3px;
         box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3); }
         section.reports .lorem-cont .lorem-box h3 {
           margin-bottom: 30px;
@@ -282,7 +322,7 @@ section {
       height: 300px;
       padding: 0px 10px;
       background: #fff;
-      border-radius: 8px;
+      border-radius: 3px;
       box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
       margin-top: 10px; }
       section.summary-section-top .graph-container .outer-box-cont .pie-chart-box img, section.summary-section-top .graph-container .outer-box-cont .insight-view img, section.summary-section-top .graph-container .outer-box-cont .bar-chart-box img, section.summary-section-top .graph-container .outer-box-cont .share-box img {
@@ -352,7 +392,7 @@ section {
     padding-left: 10px; }
     section.summary-section-top .map-container .outer-box-cont .map-box {
       background: #fff;
-      border-radius: 8px;
+      border-radius: 3px;
       box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
       margin-top: 10px; }
       section.summary-section-top .map-container .outer-box-cont .map-box h3 {
@@ -360,7 +400,7 @@ section {
       section.summary-section-top .map-container .outer-box-cont .map-box img {
         margin-top: 40px; }
       section.summary-section-top .map-container .outer-box-cont .map-box .table {
-        margin-top: 72px; }
+        margin-top: 42px; }
   section.summary-section-bottom .left-section .lorem-cont {
     margin-top: 10px;
     padding-right: 25px; }
@@ -368,45 +408,27 @@ section {
       padding-right: 15px; }
     section.summary-section-bottom .left-section .lorem-cont .lorem-box {
       background: #fff;
-      border-radius: 8px;
+      border-radius: 3px;
       box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3); }
   section.summary-section-bottom .left-section .table-section {
     margin-top: 10px;
     background: #fff;
-    border-radius: 8px;
+    border-radius: 3px;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3); }
     section.summary-section-bottom .left-section .table-section .col-md-12 {
       padding: 0px; }
       section.summary-section-bottom .left-section .table-section .col-md-12 h3 {
         margin-left: 20px; }
-      section.summary-section-bottom .left-section .table-section .col-md-12 .btn-group.bootstrap-select {
-        margin-left: 100px;
-        margin-top: 5px; }
-      section.summary-section-bottom .left-section .table-section .col-md-12 .btn-group .btn.btn-info {
-        background: none;
-        color: rgba(0, 0, 0, 0.6);
-        border: none;
-        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-        border-radius: 0px; }
-      section.summary-section-bottom .left-section .table-section .col-md-12 .btn-group .btn.active, section.summary-section-bottom .left-section .table-section .col-md-12 .btn-group .btn:active {
-        box-shadow: none; }
-      section.summary-section-bottom .left-section .table-section .col-md-12 .btn-group span.bs-caret {
-        color: rgba(0, 0, 0, 0.6);
-        margin-left: 50px; }
-      section.summary-section-bottom .left-section .table-section .col-md-12 .btn-group.open .dropdown-toggle {
-        box-shadow: none !important; }
-      section.summary-section-bottom .left-section .table-section .col-md-12 .btn-group .dropdown-menu a:focus {
-        outline: none; }
       section.summary-section-bottom .left-section .table-section .col-md-12 .table .img-responsive {
         margin: 0 auto; }
   section.summary-section-bottom .news-trends {
     padding-left: 25px; }
     section.summary-section-bottom .news-trends .news-trends-box {
       background: #fff;
-      border-radius: 8px;
+      border-radius: 3px;
       box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
       margin-top: 10px;
-      height: 484px; }
+      height: 464px; }
       section.summary-section-bottom .news-trends .news-trends-box .mesh {
         position: relative; }
         section.summary-section-bottom .news-trends .news-trends-box .mesh p {
@@ -483,20 +505,25 @@ section {
             font-weight: 500;
             top: 230px;
             left: 50px; }
+  section.dark .btn-group .btn.btn-info {
+    color: rgba(255, 255, 255, 0.6);
+    border-bottom-color: rgba(255, 255, 255, 0.6); }
+  section.dark .btn-group .dropdown-toggle .caret {
+    color: rgba(255, 255, 255, 0.6); }
   section.dark .stat-container {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.02);
     color: #fff; }
     section.dark .stat-container .stat-box {
       border-right-color: rgba(255, 255, 255, 0.35); }
       section.dark .stat-container .stat-box .stat-text h2 {
         color: #fff !important; }
   section.dark .insight-type-cont .insight-type-box, section.dark .insight-type-cont .compliance-box, section.dark .insight-type-cont .security-box {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.02);
     color: rgba(255, 255, 255, 0.6); }
   section.dark .insight-type-cont .security-box .security-chart-content .secret div, section.dark .insight-type-cont .security-box .security-chart-content .sensitive div, section.dark .insight-type-cont .security-box .security-chart-content .public div {
     border-color: rgba(255, 255, 255, 0.25); }
   section.dark.table-section .table-container {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.02);
     color: rgba(255, 255, 255, 0.6); }
     section.dark.table-section .table-container .table thead tr {
       background: rgba(102, 102, 102, 0.6); }
@@ -507,7 +534,7 @@ section {
     section.dark.reports .yellow-box {
       color: #333; }
     section.dark.reports .lorem-cont .lorem-box {
-      background: rgba(255, 255, 255, 0.05); }
+      background: rgba(255, 255, 255, 0.02); }
   section.dark .table thead tr {
     background: rgba(102, 102, 102, 0.6); }
   section.dark .table tbody tr td {
@@ -515,7 +542,7 @@ section {
   section.dark.summary-section-top h3 {
     color: rgba(255, 255, 255, 0.6); }
   section.dark.summary-section-top .graph-container .outer-box-cont .pie-chart-box, section.dark.summary-section-top .graph-container .outer-box-cont .insight-view, section.dark.summary-section-top .graph-container .outer-box-cont .bar-chart-box, section.dark.summary-section-top .graph-container .outer-box-cont .share-box {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.02);
     color: rgba(255, 255, 255, 0.6); }
     section.dark.summary-section-top .graph-container .outer-box-cont .pie-chart-box p, section.dark.summary-section-top .graph-container .outer-box-cont .insight-view p, section.dark.summary-section-top .graph-container .outer-box-cont .bar-chart-box p, section.dark.summary-section-top .graph-container .outer-box-cont .share-box p {
       color: rgba(255, 255, 255, 0.6); }
@@ -524,15 +551,15 @@ section {
     section.dark.summary-section-top .graph-container .outer-box-cont .share-box .col-xs-12 ul li strong {
       color: rgba(255, 255, 255, 0.9); }
   section.dark.summary-section-top .map-container .outer-box-cont .map-box {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.02);
     color: rgba(255, 255, 255, 0.6); }
   section.dark.summary-section-bottom h3 {
     color: rgba(255, 255, 255, 0.6); }
   section.dark.summary-section-bottom .left-section .lorem-cont .lorem-box {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.02);
     color: rgba(255, 255, 255, 0.6); }
   section.dark.summary-section-bottom .left-section .table-section {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.02);
     color: rgba(255, 255, 255, 0.6); }
     section.dark.summary-section-bottom .left-section .table-section .col-md-12 .btn-group .btn.btn-info {
       color: rgba(255, 255, 255, 0.6);
@@ -540,10 +567,144 @@ section {
     section.dark.summary-section-bottom .left-section .table-section .col-md-12 .btn-group .dropdown-toggle .caret {
       color: rgba(255, 255, 255, 0.6); }
   section.dark.summary-section-bottom .news-trends .news-trends-box {
-    background: rgba(255, 255, 255, 0.05);
+    background: rgba(255, 255, 255, 0.02);
     color: rgba(255, 255, 255, 0.6); }
     section.dark.summary-section-bottom .news-trends .news-trends-box .mesh p.black {
       color: rgba(255, 255, 255, 0.6); }
+  section.dark.insight-section-top .insight-type-box, section.section-two-container .insight-type-cont section.dark.insight-section-top .compliance-box, section.section-two-container .insight-type-cont section.dark.insight-section-top .security-box, section.dark.insight-section-top .insight-type-cont .compliance-box, section.dark.insight-section-top .insight-type-cont .security-box {
+    height: 200px; }
+    section.dark.insight-section-top .insight-type-box.add-source .map-marker img, section.section-two-container .insight-type-cont section.dark.insight-section-top .add-source.compliance-box .map-marker img, section.section-two-container .insight-type-cont section.dark.insight-section-top .add-source.security-box .map-marker img, section.dark.insight-section-top .insight-type-cont .add-source.compliance-box .map-marker img, section.dark.insight-section-top .insight-type-cont .add-source.security-box .map-marker img {
+      margin-top: 40px;
+      margin-left: 10px;
+      width: 80px; }
+    section.dark.insight-section-top .insight-type-box.add-source form, section.section-two-container .insight-type-cont section.dark.insight-section-top .add-source.compliance-box form, section.section-two-container .insight-type-cont section.dark.insight-section-top .add-source.security-box form, section.dark.insight-section-top .insight-type-cont .add-source.compliance-box form, section.dark.insight-section-top .insight-type-cont .add-source.security-box form {
+      margin-top: 20px; }
+      section.dark.insight-section-top .insight-type-box.add-source form .form-control, section.section-two-container .insight-type-cont section.dark.insight-section-top .add-source.compliance-box form .form-control, section.section-two-container .insight-type-cont section.dark.insight-section-top .add-source.security-box form .form-control, section.dark.insight-section-top .insight-type-cont .add-source.compliance-box form .form-control, section.dark.insight-section-top .insight-type-cont .add-source.security-box form .form-control {
+        background: none;
+        border: none;
+        color: rgba(255, 255, 255, 0.8);
+        border-radius: 0px;
+        box-shadow: none;
+        margin-top: -5px;
+        padding-bottom: 2px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+      section.dark.insight-section-top .insight-type-box.add-source form .control-label, section.section-two-container .insight-type-cont section.dark.insight-section-top .add-source.compliance-box form .control-label, section.section-two-container .insight-type-cont section.dark.insight-section-top .add-source.security-box form .control-label, section.dark.insight-section-top .insight-type-cont .add-source.compliance-box form .control-label, section.dark.insight-section-top .insight-type-cont .add-source.security-box form .control-label {
+        font-size: 13px;
+        font-weight: 400;
+        color: rgba(255, 255, 255, 0.9);
+        text-transform: uppercase; }
+    section.dark.insight-section-top .insight-type-box.add-source .btn-yellow, section.section-two-container .insight-type-cont section.dark.insight-section-top .add-source.compliance-box .btn-yellow, section.section-two-container .insight-type-cont section.dark.insight-section-top .add-source.security-box .btn-yellow, section.dark.insight-section-top .insight-type-cont .add-source.compliance-box .btn-yellow, section.dark.insight-section-top .insight-type-cont .add-source.security-box .btn-yellow {
+      margin-top: 110px; }
+    section.dark.insight-section-top .insight-type-box.ranking ul, section.section-two-container .insight-type-cont section.dark.insight-section-top .ranking.compliance-box ul, section.section-two-container .insight-type-cont section.dark.insight-section-top .ranking.security-box ul, section.dark.insight-section-top .insight-type-cont .ranking.compliance-box ul, section.dark.insight-section-top .insight-type-cont .ranking.security-box ul, section.dark.insight-section-top .insight-type-box.weighting ul, section.section-two-container .insight-type-cont section.dark.insight-section-top .weighting.compliance-box ul, section.section-two-container .insight-type-cont section.dark.insight-section-top .weighting.security-box ul, section.dark.insight-section-top .insight-type-cont .weighting.compliance-box ul, section.dark.insight-section-top .insight-type-cont .weighting.security-box ul {
+      padding: 0px 30px; }
+      section.dark.insight-section-top .insight-type-box.ranking ul li, section.section-two-container .insight-type-cont section.dark.insight-section-top .ranking.compliance-box ul li, section.section-two-container .insight-type-cont section.dark.insight-section-top .ranking.security-box ul li, section.dark.insight-section-top .insight-type-cont .ranking.compliance-box ul li, section.dark.insight-section-top .insight-type-cont .ranking.security-box ul li, section.dark.insight-section-top .insight-type-box.weighting ul li, section.section-two-container .insight-type-cont section.dark.insight-section-top .weighting.compliance-box ul li, section.section-two-container .insight-type-cont section.dark.insight-section-top .weighting.security-box ul li, section.dark.insight-section-top .insight-type-cont .weighting.compliance-box ul li, section.dark.insight-section-top .insight-type-cont .weighting.security-box ul li {
+        display: block;
+        color: rgba(255, 255, 255, 0.8);
+        margin: 20px 0px; }
+        section.dark.insight-section-top .insight-type-box.ranking ul li span, section.section-two-container .insight-type-cont section.dark.insight-section-top .ranking.compliance-box ul li span, section.section-two-container .insight-type-cont section.dark.insight-section-top .ranking.security-box ul li span, section.dark.insight-section-top .insight-type-cont .ranking.compliance-box ul li span, section.dark.insight-section-top .insight-type-cont .ranking.security-box ul li span, section.dark.insight-section-top .insight-type-box.weighting ul li span, section.section-two-container .insight-type-cont section.dark.insight-section-top .weighting.compliance-box ul li span, section.section-two-container .insight-type-cont section.dark.insight-section-top .weighting.security-box ul li span, section.dark.insight-section-top .insight-type-cont .weighting.compliance-box ul li span, section.dark.insight-section-top .insight-type-cont .weighting.security-box ul li span {
+          float: right; }
+    section.dark.insight-section-top .insight-type-box.weighting ul li, section.section-two-container .insight-type-cont section.dark.insight-section-top .weighting.compliance-box ul li, section.section-two-container .insight-type-cont section.dark.insight-section-top .weighting.security-box ul li, section.dark.insight-section-top .insight-type-cont .weighting.compliance-box ul li, section.dark.insight-section-top .insight-type-cont .weighting.security-box ul li {
+      margin: 12px 0px !important; }
+  section.dark.insight-section-bottom .table-container {
+    color: rgba(255, 255, 255, 0.8);
+    padding-right: 30px; }
+    section.dark.insight-section-bottom .table-container .table-section {
+      padding: 0px;
+      background: rgba(255, 255, 255, 0.02);
+      color: rgba(255, 255, 255, 0.6);
+      margin-top: 10px;
+      border-radius: 3px;
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3); }
+      section.dark.insight-section-bottom .table-container .table-section .col-md-12 {
+        padding: 0px; }
+        section.dark.insight-section-bottom .table-container .table-section .col-md-12 h3 {
+          margin-left: 15px; }
+        section.dark.insight-section-bottom .table-container .table-section .col-md-12 .btn-group.bootstrap-select {
+          margin-left: -35px !important;
+          margin-top: 5px; }
+        section.dark.insight-section-bottom .table-container .table-section .col-md-12 .table tr td {
+          padding-top: 15px; }
+          section.dark.insight-section-bottom .table-container .table-section .col-md-12 .table tr td .squaredThree {
+            width: 20px;
+            position: relative;
+            margin: 0px auto; }
+            section.dark.insight-section-bottom .table-container .table-section .col-md-12 .table tr td .squaredThree label {
+              width: 15px;
+              height: 15px;
+              cursor: pointer;
+              position: absolute;
+              top: 0;
+              left: 0;
+              border: 1px solid rgba(255, 255, 255, 0.5); }
+              section.dark.insight-section-bottom .table-container .table-section .col-md-12 .table tr td .squaredThree label:after {
+                content: '';
+                width: 9px;
+                height: 5px;
+                position: absolute;
+                top: 3px;
+                left: 2px;
+                border: 2px solid #fbb03b;
+                border-top: none;
+                border-right: none;
+                background: transparent;
+                opacity: 0;
+                transform: rotate(-45deg); }
+              section.dark.insight-section-bottom .table-container .table-section .col-md-12 .table tr td .squaredThree label:hover::after {
+                opacity: 0.3; }
+            section.dark.insight-section-bottom .table-container .table-section .col-md-12 .table tr td .squaredThree input[type=checkbox] {
+              visibility: hidden; }
+              section.dark.insight-section-bottom .table-container .table-section .col-md-12 .table tr td .squaredThree input[type=checkbox]:checked + label:after {
+                opacity: 1; }
+          section.dark.insight-section-bottom .table-container .table-section .col-md-12 .table tr td .btn-yellow {
+            padding: 2px 10px;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 13px;
+            padding-top: 3px;
+            margin-top: -6px; }
+  section.dark.setup-section-top .outer-cont {
+    padding-right: 20px;
+    padding-left: 20px; }
+    section.dark.setup-section-top .outer-cont .compute-sec {
+      background: rgba(255, 255, 255, 0.02);
+      border-radius: 3px;
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+      height: 250px;
+      margin-top: 10px;
+      padding-left: 35px;
+      padding-bottom: 20px; }
+      section.dark.setup-section-top .outer-cont .compute-sec h3 {
+        margin-bottom: 20px; }
+      section.dark.setup-section-top .outer-cont .compute-sec .box-cont {
+        text-align: center;
+        padding-right: 60px; }
+        section.dark.setup-section-top .outer-cont .compute-sec .box-cont .box {
+          background: #fff;
+          padding: 10px 10px 5px 10px;
+          border-radius: 20px; }
+          section.dark.setup-section-top .outer-cont .compute-sec .box-cont .box .img-responsive {
+            width: 50px;
+            display: inline-block; }
+          section.dark.setup-section-top .outer-cont .compute-sec .box-cont .box h5 {
+            margin-top: 5px;
+            font-size: 12px; }
+          section.dark.setup-section-top .outer-cont .compute-sec .box-cont .box.vfs .img-responsive {
+            width: 40px; }
+        section.dark.setup-section-top .outer-cont .compute-sec .box-cont p {
+          margin-top: 10px;
+          line-height: 15px;
+          margin: 10px -25px;
+          color: rgba(255, 255, 255, 0.7); }
+        section.dark.setup-section-top .outer-cont .compute-sec .box-cont.disp {
+          display: none; }
+      section.dark.setup-section-top .outer-cont .compute-sec.bottom-sec {
+        height: 280px; }
+        section.dark.setup-section-top .outer-cont .compute-sec.bottom-sec h3 {
+          color: #fbb03b; }
+    section.dark.setup-section-top .outer-cont.last {
+      padding-right: 15px; }
+    section.dark.setup-section-top .outer-cont.first {
+      padding-left: 15px; }
 
 footer {
   margin-top: 20px;
@@ -568,7 +729,25 @@ footer {
   section.summary-section-top .map-container .outer-box-cont .map-box {
     height: 622px; }
   section.summary-section-bottom .news-trends .news-trends-box {
-    height: 577px; } }
+    height: 577px; }
+  section.insight-section-top .map-marker .img-responsive {
+    display: inline-block;
+    text-align: center; }
+  section.insight-section-top .insight-type-box, section.insight-section-top section.section-two-container .insight-type-cont .compliance-box, section.section-two-container .insight-type-cont section.insight-section-top .compliance-box, section.insight-section-top section.section-two-container .insight-type-cont .security-box, section.section-two-container .insight-type-cont section.insight-section-top .security-box, section.insight-section-top section.dark .insight-type-cont .compliance-box, section.dark .insight-type-cont section.insight-section-top .compliance-box, section.insight-section-top section.dark .insight-type-cont .security-box, section.dark .insight-type-cont section.insight-section-top .security-box {
+    height: 205px !important;
+    min-height: auto !important; }
+    section.insight-section-top .insight-type-box.add-source .btn-yellow, section.insight-section-top section.section-two-container .insight-type-cont .add-source.compliance-box .btn-yellow, section.section-two-container .insight-type-cont section.insight-section-top .add-source.compliance-box .btn-yellow, section.insight-section-top section.section-two-container .insight-type-cont .add-source.security-box .btn-yellow, section.section-two-container .insight-type-cont section.insight-section-top .add-source.security-box .btn-yellow, section.insight-section-top section.dark .insight-type-cont .add-source.compliance-box .btn-yellow, section.dark .insight-type-cont section.insight-section-top .add-source.compliance-box .btn-yellow, section.insight-section-top section.dark .insight-type-cont .add-source.security-box .btn-yellow, section.dark .insight-type-cont section.insight-section-top .add-source.security-box .btn-yellow {
+      margin-left: -20px !important;
+      margin-top: 120px !important;
+      margin-bottom: 10px !important; }
+  section.dark.setup-section-top .outer-cont .compute-sec {
+    height: 250px; }
+    section.dark.setup-section-top .outer-cont .compute-sec .box-cont {
+      padding-right: 30px; }
+  section.dark.setup-section-top .outer-cont.last {
+    padding-right: 15px; }
+  section.dark.setup-section-top .outer-cont.first {
+    padding-left: 15px; } }
 
 @media (max-width: 991px) {
   header .navbar-default .navbar-nav.navbar-center {
@@ -591,6 +770,16 @@ footer {
     section.summary-section-top .map-container .outer-box-cont .map-box {
       height: auto; }
   section.summary-section-bottom .news-trends {
+    padding-left: 15px; }
+  section.dark.setup-section-top .outer-cont .compute-sec {
+    height: 250px; }
+    section.dark.setup-section-top .outer-cont .compute-sec .box-cont {
+      padding-right: 30px; }
+      section.dark.setup-section-top .outer-cont .compute-sec .box-cont .box.vfs .img-responsive {
+        width: 50px; }
+  section.dark.setup-section-top .outer-cont.last {
+    padding-right: 15px; }
+  section.dark.setup-section-top .outer-cont.first {
     padding-left: 15px; } }
 
 @media (max-width: 768px) {
@@ -616,7 +805,23 @@ footer {
   section.summary-section-bottom .left-section .table-section .col-md-12 .btn-group.bootstrap-select {
     margin-left: 85px; }
   section.summary-section-bottom .news-trends .news-trends-box .mesh {
-    margin-left: 190px; } }
+    margin-left: 190px; }
+  section.insight-section-top .insight-type-box, section.insight-section-top section.section-two-container .insight-type-cont .compliance-box, section.section-two-container .insight-type-cont section.insight-section-top .compliance-box, section.insight-section-top section.section-two-container .insight-type-cont .security-box, section.section-two-container .insight-type-cont section.insight-section-top .security-box, section.insight-section-top section.dark .insight-type-cont .compliance-box, section.dark .insight-type-cont section.insight-section-top .compliance-box, section.insight-section-top section.dark .insight-type-cont .security-box, section.dark .insight-type-cont section.insight-section-top .security-box {
+    height: auto !important; }
+  section.dark.setup-section-top .outer-cont .compute-sec .box-cont p {
+    margin: 10px 0px; } }
+
+@media (max-width: 766px) {
+  section.dark.setup-section-top .outer-cont .compute-sec {
+    height: auto; }
+    section.dark.setup-section-top .outer-cont .compute-sec .box-cont p {
+      margin: 0px;
+      margin-bottom: 30px;
+      margin-top: 10px; }
+    section.dark.setup-section-top .outer-cont .compute-sec .box-cont.disp {
+      display: block; }
+    section.dark.setup-section-top .outer-cont .compute-sec.bottom-sec {
+      height: auto; } }
 
 @media (max-width: 600px) {
   section {
@@ -629,7 +834,21 @@ footer {
     section.summary-section-bottom .left-section .table-section .col-md-12 .btn-group.bootstrap-select {
       margin-left: 15px; }
     section.summary-section-bottom .news-trends .news-trends-box .mesh {
-      margin-left: 80px; } }
+      margin-left: 80px; }
+    section.insight-section-top .map-marker {
+      text-align: center; }
+      section.insight-section-top .map-marker .img-responsive {
+        display: inline-block;
+        margin-bottom: 10px; }
+    section.insight-section-top .insight-type-box, section.insight-section-top section.section-two-container .insight-type-cont .compliance-box, section.section-two-container .insight-type-cont section.insight-section-top .compliance-box, section.insight-section-top section.section-two-container .insight-type-cont .security-box, section.section-two-container .insight-type-cont section.insight-section-top .security-box, section.insight-section-top section.dark .insight-type-cont .compliance-box, section.dark .insight-type-cont section.insight-section-top .compliance-box, section.insight-section-top section.dark .insight-type-cont .security-box, section.dark .insight-type-cont section.insight-section-top .security-box {
+      height: auto;
+      min-height: auto !important; }
+      section.insight-section-top .insight-type-box.add-source, section.insight-section-top section.section-two-container .insight-type-cont .add-source.compliance-box, section.section-two-container .insight-type-cont section.insight-section-top .add-source.compliance-box, section.insight-section-top section.section-two-container .insight-type-cont .add-source.security-box, section.section-two-container .insight-type-cont section.insight-section-top .add-source.security-box, section.insight-section-top section.dark .insight-type-cont .add-source.compliance-box, section.dark .insight-type-cont section.insight-section-top .add-source.compliance-box, section.insight-section-top section.dark .insight-type-cont .add-source.security-box, section.dark .insight-type-cont section.insight-section-top .add-source.security-box {
+        text-align: right; }
+        section.insight-section-top .insight-type-box.add-source h3, section.insight-section-top section.section-two-container .insight-type-cont .add-source.compliance-box h3, section.section-two-container .insight-type-cont section.insight-section-top .add-source.compliance-box h3, section.insight-section-top section.section-two-container .insight-type-cont .add-source.security-box h3, section.section-two-container .insight-type-cont section.insight-section-top .add-source.security-box h3, section.insight-section-top section.dark .insight-type-cont .add-source.compliance-box h3, section.dark .insight-type-cont section.insight-section-top .add-source.compliance-box h3, section.insight-section-top section.dark .insight-type-cont .add-source.security-box h3, section.dark .insight-type-cont section.insight-section-top .add-source.security-box h3 {
+          text-align: left; }
+        section.insight-section-top .insight-type-box.add-source .btn-yellow, section.insight-section-top section.section-two-container .insight-type-cont .add-source.compliance-box .btn-yellow, section.section-two-container .insight-type-cont section.insight-section-top .add-source.compliance-box .btn-yellow, section.insight-section-top section.section-two-container .insight-type-cont .add-source.security-box .btn-yellow, section.section-two-container .insight-type-cont section.insight-section-top .add-source.security-box .btn-yellow, section.insight-section-top section.dark .insight-type-cont .add-source.compliance-box .btn-yellow, section.dark .insight-type-cont section.insight-section-top .add-source.compliance-box .btn-yellow, section.insight-section-top section.dark .insight-type-cont .add-source.security-box .btn-yellow, section.dark .insight-type-cont section.insight-section-top .add-source.security-box .btn-yellow {
+          margin-top: 10px !important; } }
 
 @media (max-width: 480px) {
   body {
@@ -641,12 +860,12 @@ footer {
     header .navbar-nav.navbar-center li a {
       text-align: center; }
       header .navbar-nav.navbar-center li a:hover {
-        color: #ea6a2b; }
+        color: #87dfab; }
         header .navbar-nav.navbar-center li a:hover:after {
           width: 0% !important; }
-    header .navbar-nav.navbar-center li.active a, header .navbar-nav.navbar-center section.summary-section-bottom .left-section .table-section .col-md-12 .btn-group li.btn:active a, section.summary-section-bottom .left-section .table-section .col-md-12 .btn-group header .navbar-nav.navbar-center li.btn:active a {
-      color: #ea6a2b; }
-      header .navbar-nav.navbar-center li.active a:after, header .navbar-nav.navbar-center section.summary-section-bottom .left-section .table-section .col-md-12 .btn-group li.btn:active a:after, section.summary-section-bottom .left-section .table-section .col-md-12 .btn-group header .navbar-nav.navbar-center li.btn:active a:after {
+    header .navbar-nav.navbar-center li.active a, header .navbar-nav.navbar-center section .btn-group li.btn:active a, section .btn-group header .navbar-nav.navbar-center li.btn:active a {
+      color: #87dfab; }
+      header .navbar-nav.navbar-center li.active a:after, header .navbar-nav.navbar-center section .btn-group li.btn:active a:after, section .btn-group header .navbar-nav.navbar-center li.btn:active a:after {
         width: 0% !important; }
   header .navbar-nav.navbar-right {
     display: none; }
@@ -664,7 +883,7 @@ footer {
     section.summary-section-top .graph-container .outer-box-cont .pie-chart-box p .number.ml-1-set, section.summary-section-top .graph-container .outer-box-cont .insight-view p .number.ml-1-set, section.summary-section-top .graph-container .outer-box-cont .bar-chart-box p .number.ml-1-set, section.summary-section-top .graph-container .outer-box-cont .share-box p .number.ml-1-set {
       margin-left: 2px; }
     section.summary-section-bottom .left-section .table-section .col-md-12 .btn-group.bootstrap-select {
-      margin-left: -50px; }
+      margin-left: -50px !important; }
     section.summary-section-bottom .news-trends .news-trends-box {
       overflow: auto; }
       section.summary-section-bottom .news-trends .news-trends-box .mesh {
@@ -672,4 +891,20 @@ footer {
         section.summary-section-bottom .news-trends .news-trends-box .mesh p {
           position: static;
           text-align: center;
-          margin-bottom: 20px; } }
+          margin-bottom: 20px; }
+    section.insight-section-top .map-marker {
+      text-align: center; }
+      section.insight-section-top .map-marker .img-responsive {
+        display: inline-block;
+        margin-bottom: 10px; }
+    section.insight-section-top .insight-type-box, section.insight-section-top section.section-two-container .insight-type-cont .compliance-box, section.section-two-container .insight-type-cont section.insight-section-top .compliance-box, section.insight-section-top section.section-two-container .insight-type-cont .security-box, section.section-two-container .insight-type-cont section.insight-section-top .security-box, section.insight-section-top section.dark .insight-type-cont .compliance-box, section.dark .insight-type-cont section.insight-section-top .compliance-box, section.insight-section-top section.dark .insight-type-cont .security-box, section.dark .insight-type-cont section.insight-section-top .security-box {
+      height: auto;
+      min-height: auto !important; }
+      section.insight-section-top .insight-type-box.add-source, section.insight-section-top section.section-two-container .insight-type-cont .add-source.compliance-box, section.section-two-container .insight-type-cont section.insight-section-top .add-source.compliance-box, section.insight-section-top section.section-two-container .insight-type-cont .add-source.security-box, section.section-two-container .insight-type-cont section.insight-section-top .add-source.security-box, section.insight-section-top section.dark .insight-type-cont .add-source.compliance-box, section.dark .insight-type-cont section.insight-section-top .add-source.compliance-box, section.insight-section-top section.dark .insight-type-cont .add-source.security-box, section.dark .insight-type-cont section.insight-section-top .add-source.security-box {
+        text-align: right; }
+        section.insight-section-top .insight-type-box.add-source h3, section.insight-section-top section.section-two-container .insight-type-cont .add-source.compliance-box h3, section.section-two-container .insight-type-cont section.insight-section-top .add-source.compliance-box h3, section.insight-section-top section.section-two-container .insight-type-cont .add-source.security-box h3, section.section-two-container .insight-type-cont section.insight-section-top .add-source.security-box h3, section.insight-section-top section.dark .insight-type-cont .add-source.compliance-box h3, section.dark .insight-type-cont section.insight-section-top .add-source.compliance-box h3, section.insight-section-top section.dark .insight-type-cont .add-source.security-box h3, section.dark .insight-type-cont section.insight-section-top .add-source.security-box h3 {
+          text-align: left; }
+        section.insight-section-top .insight-type-box.add-source .btn-yellow, section.insight-section-top section.section-two-container .insight-type-cont .add-source.compliance-box .btn-yellow, section.section-two-container .insight-type-cont section.insight-section-top .add-source.compliance-box .btn-yellow, section.insight-section-top section.section-two-container .insight-type-cont .add-source.security-box .btn-yellow, section.section-two-container .insight-type-cont section.insight-section-top .add-source.security-box .btn-yellow, section.insight-section-top section.dark .insight-type-cont .add-source.compliance-box .btn-yellow, section.dark .insight-type-cont section.insight-section-top .add-source.compliance-box .btn-yellow, section.insight-section-top section.dark .insight-type-cont .add-source.security-box .btn-yellow, section.dark .insight-type-cont section.insight-section-top .add-source.security-box .btn-yellow {
+          margin-top: 10px !important; }
+    section.insight-section-bottom .table-container {
+      padding-right: 15px !important; } }
