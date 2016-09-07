@@ -932,3 +932,7 @@ footer {
           margin-top: 10px !important; }
     section.insight-section-bottom .table-container {
       padding-right: 15px !important; } }
+
+@media (min-width: 1600px) {
+  header .navbar-nav.navbar-center {
+    margin-left: 380px !important; } }
