@@ -1148,7 +1148,7 @@ footer {
         .navbar-default {
             .navbar-nav {
                 &.navbar-center {
-                    margin-left: 5px;
+                    margin-left: 150px;
                 }
             }
         }
@@ -1225,7 +1225,7 @@ footer {
         .navbar-default {
             .navbar-nav {
                 &.navbar-center {
-                    margin-left: 20px;
+                    margin-left: 120px;
                 }
                 &.navbar-right {
                     display: none;
@@ -1234,6 +1234,23 @@ footer {
         }
     }
     section {
+        &.stats {
+            text-align: center;
+            .stat-container {
+                .stat-box {
+                    margin-bottom: 0px;
+                    padding-right: 15px;
+                    .stat-text {
+                        float: none
+                    }
+                    img {
+                        float: none;
+                        margin-top: 10px;
+                        display: inline-block;
+                    }
+                }
+            }
+        }
         &.section-two-container {
             margin-top: 10px;
             .insight-type-cont {
@@ -1251,6 +1268,13 @@ footer {
             .graph-container {
                 .outer-box-cont {
                     padding-left: 15px;
+                    .pie-chart-box{
+                        
+                        .img-responsive{
+                            
+                        display: inline-block;
+                    }
+                    }
                 }
             }
             .map-container {
@@ -1315,23 +1339,7 @@ footer {
         }
     }
     section {
-        &.stats {
-            text-align: center;
-            .stat-container {
-                .stat-box {
-                    margin-bottom: 0px;
-                    padding-right: 15px;
-                    .stat-text {
-                        float: none
-                    }
-                    img {
-                        float: none;
-                        margin-top: 10px;
-                        display: inline-block;
-                    }
-                }
-            }
-        }
+      
         &.section-two-container {
             .insight-type-cont {
                 .compliance-box {
@@ -1380,7 +1388,16 @@ footer {
     }
 }
 @media(max-width:766px){
-    section{ &.dark {
+    section{ 
+        &.stats {
+            .stat-container {
+                .stat-box {
+                    margin-bottom: 30px;
+                    border: none;
+                }
+            }
+        }
+        &.dark {
             &.setup-section-top {
                 .outer-cont {
                     .compute-sec {
@@ -1403,19 +1420,46 @@ footer {
                 }
             }
         }
-    }
+     &.summary-section-bottom {
+            .left-section {
+                .table-section {
+                    .col-md-12 {
+                        .btn-group {
+                            &.bootstrap-select {
+                                margin-left: 25px !important;
+                            }
+                        }
+                    }
+                }
+            }    
+        }
+     &.insight-section-top {
+            .map-marker {
+                text-align: center;
+                .img-responsive {
+                    display: inline-block;
+                    margin-bottom: 10px;
+                }
+            }
+            .insight-type-box {
+                height: auto;
+                min-height: auto !important;
+                &.add-source {
+                    text-align: right;
+                    h3 {
+                        text-align: left;
+                    }
+                    .btn-yellow {
+                        margin-top: 10px !important;
+                    }
+                }
+            }
+        }}
 }
 @media(max-width:600px) {
     section {
         padding: 0px 10px;
-        &.stats {
-            .stat-container {
-                .stat-box {
-                    margin-bottom: 30px;
-                    border: none;
-                }
-            }
-        }
+       
         &.summary-section-bottom {
             .left-section {
                 .lorem-cont {
