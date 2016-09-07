@@ -1149,6 +1149,9 @@ footer {
             .navbar-nav {
                 &.navbar-center {
                     margin-left: 150px;
+                    &.setup-navbar{
+                        margin-left: 80px;
+                    }
                 }
             }
         }
@@ -1226,6 +1229,9 @@ footer {
             .navbar-nav {
                 &.navbar-center {
                     margin-left: 120px;
+                    &.setup-navbar{
+                        margin-left: 50px;
+                    }
                 }
                 &.navbar-right {
                     display: none;
@@ -1403,6 +1409,7 @@ footer {
                     .compute-sec {
                         height: auto;
                         .box-cont {
+                            height: 210px;
                             p {
                                 margin:0px;
                                 margin-bottom: 30px;
@@ -1412,6 +1419,7 @@ footer {
                               &.disp{
                                 display:block;
                             }
+                           
                         }
                         &.bottom-sec {
                             height: auto;
