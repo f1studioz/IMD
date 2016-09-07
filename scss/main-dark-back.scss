@@ -85,7 +85,7 @@ header {
             &.navbar-center {
                 margin-left: 270px;
                 li {
-                    a {
+                    a { font-size: 13px;
                         text-transform: uppercase;
                         &:after {
                             content: '';
@@ -1087,6 +1087,7 @@ section {
                             .img-responsive {
                                 width: 50px;
                                 display: inline-block;
+                                transition: transform 0.2s;
                             }
                             h5 {
                                 margin-top: 5px;
@@ -1097,6 +1098,11 @@ section {
                                     width: 40px;
                                 }
                             }
+                             &:hover{
+                                 .img-responsive{
+                                   transform:  scale(1.1);
+                                 }
+                                 }
                         }
                         p {
                             margin-top: 10px;
@@ -1423,6 +1429,9 @@ footer {
                         }
                         &.bottom-sec {
                             height: auto;
+                            .box-cont{
+                                height: auto;
+                            }
                         }
                     }
                 }
@@ -1644,6 +1653,15 @@ footer {
                 padding-right: 15px !important;
             }
         }
+    }
+}
+@media(min-width:1400px){
+     header {
+        .navbar-nav {
+            &.navbar-center {
+                margin-left:307px !important;
+            }
+         }
     }
 }
 @media(min-width:1600px){
