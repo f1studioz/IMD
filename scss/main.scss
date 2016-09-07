@@ -1646,3 +1646,12 @@ footer {
         }
     }
 }
+@media(min-width:1600px){
+     header {
+        .navbar-nav {
+            &.navbar-center {
+                margin-left:380px !important;
+            }
+         }
+    }
+}
